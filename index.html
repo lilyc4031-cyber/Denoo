@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dennis Kim | Web Designer in Meru & Nairobi</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background:#0a0a0f; color:white; line-height:1.6; }
+a { text-decoration:none; }
+
+/* NAV */
+nav { display:flex; justify-content:space-between; align-items:center; padding:20px 5%; background:#0a0a0f; position:sticky; top:0; z-index:10; border-bottom:1px solid #222; }
+.logo { font-size:24px; font-weight:800; }
+.logo span { color:#00ff88; }
+nav a { color:white; margin-left:20px; font-weight:600; font-size:14px; }
+.btn { background:#00ff88; color:#000 !important; padding:12px 22px; border-radius:30px; font-weight:800; display:inline-block; }
+
+/* HERO */
+.hero { text-align:center; padding:70px 20px 50px; background: radial-gradient(circle at top, #1a3a2a 0%, #0a0a0f 60%); }
+.hero .badge { background:#1f1f1f; border:1px solid #333; padding:8px 16px; border-radius:30px; font-size:13px; color:#00ff88; }
+.hero h1 { font-size:48px; line-height:1.1; margin:20px 0 15px; }
+.hero h1 span { color:#00ff88; }
+.hero p { color:#bbb; max-width:600px; margin:0 auto 25px; font-size:18px; }
+.hero-buttons { display:flex; gap:15px; justify-content:center; flex-wrap:wrap; }
+.btn-white { background:white; color:black !important; padding:12px 22px; border-radius:30px; font-weight:800; }
+.stats { display:flex; justify-content:center; gap:40px; margin-top:40px; flex-wrap:wrap; }
+.stats b { display:block; font-size:28px; }
+.stats span { color:#888; font-size:14px; }
+
+/* SECTION */
+.section { padding:60px 5%; max-width:1100px; margin:auto; }
+.section h2 { text-align:center; font-size:32px; margin-bottom:10px; }
+.section > p { text-align:center; color:#999; margin-bottom:35px; }
+
+/* SERVICES */
+.grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; }
+.card { background:#15151d; padding:28px; border-radius:18px; border:1px solid #222; }
+.card .icon { font-size:35px; margin-bottom:12px; }
+.card h3 { margin-bottom:8px; font-size:20px; }
+.card p { color:#aaa; font-size:15px; margin-bottom:15px; }
+.card b { color:#00ff88; }
+
+/* PRICING */
+.price-card { background:#15151d; padding:30px; border-radius:20px; border:1px solid #222; text-align:center; position:relative; }
+.price-card.popular { border:2px solid #00ff88; transform:scale(1.02); }
+.price-card .tag { background:#00ff88; color:black; font-size:12px; font-weight:800; padding:5px 12px; border-radius:20px; position:absolute; top:-12px; left:50%; transform:translateX(-50%); }
+.price-card h3 { font-size:20px; }
+.price-card .price { font-size:38px; font-weight:900; margin:15px 0 5px; }
+.price-card .price small { font-size:14px; color:#888; font-weight:400; }
+.price-card ul { list-style:none; text-align:left; margin:20px 0; color:#bbb; font-size:15px; }
+.price-card ul li { padding:7px 0; border-bottom:1px solid #222; }
+.price-card ul li:last-child { border:none; }
+
+/* PORTFOLIO */
+.work { background:#15151d; border-radius:18px; overflow:hidden; border:1px solid #222; }
+.work-img { height:160px; display:flex; align-items:center; justify-content:center; font-size:50px; }
+.work-body { padding:20px; }
+.work-body h3 { margin-bottom:5px; }
+.work-body p { color:#999; font-size:14px; }
+
+/* TESTIMONIAL */
+.testi { background:#15151d; padding:25px; border-radius:18px; border-left:4px solid #00ff88; }
+.testi p { color:#ddd; font-style:italic; margin-bottom:12px; }
+.testi b { color:#00ff88; }
+
+/* CTA */
+.cta { background:#00ff88; color:#000; border-radius:22px; padding:45px 25px; text-align:center; margin:20px 5% 60px; }
+.cta h2 { font-size:32px; margin-bottom:10px; }
+.cta p { margin-bottom:25px; font-weight:600; }
+.cta .btn-black { background:#000; color:white !important; padding:14px 28px; border-radius:30px; font-weight:800; display:inline-block; }
+
+footer { text-align:center; padding:25px; color:#666; font-size:14px; border-top:1px solid #222; }
+@media(max-width:600px){ .hero h1{font-size:34px;} nav a:not(.btn){display:none;} }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">DENNIS<span>KIM.</span></div>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#work">My Work</a>
+    <a href="https://wa.me/254700000000" class="btn">Hire Me</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <span class="badge">● Available for new projects in Meru & Nairobi</span>
+  <h1>I Build Websites That<br><span>Make Businesses Money.</span></h1>
+  <p>I help salons, shops, schools & hustles in Kenya look professional online — and get more customers on WhatsApp.</p>
+  <div class="hero-buttons">
+    <a href="https://wa.me/254700000000" class="btn">💬 Order on WhatsApp</a>
+    <a href="#work" class="btn-white">See My Work ↓</a>
+  </div>
+  <div class="stats">
+    <div><b>20+ </b><span>Websites Done</span></div>
+    <div><b>2-3 Days</b><span>Fast Delivery</span></div>
+    <div><b>100%</b><span>Happy Clients</span></div>
+  </div>
+</div>
+
+<div class="section" id="services">
+  <h2>What I Can Do For You</h2>
+  <p>Simple, fast, beautiful websites that work on phone.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">💼</div><h3>Business Website</h3><p>For salons, shops, hotels, churches & schools. Show your services, prices & location.</p><b>From KSh 3,500</b></div>
+    <div class="card"><div class="icon">🛒</div><h3>Online Shop / Catalogue</h3><p>Show your products with prices. Customers order directly on WhatsApp.</p><b>From KSh 7,000</b></div>
+    <div class="card"><div class="icon">👤</div><h3>Personal Portfolio</h3><p>For artists, photographers, DJs, influencers. Look like a pro.</p><b>From KSh 2,500</b></div>
+    <div class="card"><div class="icon">🚀</div><h3>Landing Page</h3><p>One page to sell one product or event. Perfect for ads & posters.</p><b>From KSh 2,000</b></div>
+  </div>
+</div>
+
+<div class="section" id="pricing">
+  <h2>Simple Pricing. No Hidden Fees.</h2>
+  <p>Pay 50% to start, 50% when your site is live.</p>
+  <div class="grid">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="price">KSh 2,500</div>
+      <small>1 Page Website</small>
+      <ul>
+        <li>✅ 1 Page Design</li>
+        <li>✅ Mobile Friendly</li>
+        <li>✅ WhatsApp Button</li>
+        <li>✅ Google Maps Location</li>
+        <li>❌ No Online Shop</li>
+      </ul>
+      <a href="https://wa.me/254700000000?text=Hi Dennis, I want the STARTER package" class="btn">Choose Starter</a>
+    </div>
+    <div class="price-card popular">
+      <span class="tag">MOST POPULAR</span>
+      <h3>Business</h3>
+      <div class="price">KSh 5,000</div>
+      <small>Up to 5 Pages</small>
+      <ul>
+        <li>✅ Everything in Starter</li>
+        <li>✅ Home, Services, About, Contact</li>
+        <li>✅ Free Domain Setup Help</li>
+        <li>✅ Free Logo / Colors</li>
+        <li>✅ 1 Month Free Support</li>
+      </ul>
+      <a href="https://wa.me/254700000000?text=Hi Dennis, I want the BUSINESS package" class="btn">Choose Business</a>
+    </div>
+    <div class="price-card">
+      <h3>Pro Shop</h3>
+      <div class="price">KSh 9,999</div>
+      <small>Online Shop</small>
+      <ul>
+        <li>✅ Everything in Business</li>
+        <li>✅ Product Catalogue</li>
+        <li>✅ WhatsApp Orders</li>
+        <li>✅ M-Pesa Instructions</li>
+        <li>✅ SEO on Google</li>
+      </ul>
+      <a href="https://wa.me/254700000000?text=Hi Dennis, I want the PRO SHOP package" class="btn">Choose Pro</a>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="work">
+  <h2>My Recent Work</h2>
+  <p>Real websites for real Kenyan businesses.</p>
+  <div class="grid">
+    <div class="work"><div class="work-img" style="background:#ffdde8;">💇‍♀️</div><div class="work-body"><h3>Neema Salon Meru</h3><p>Salon Website • Booking on WhatsApp • Price List</p></div></div>
+    <div class="work"><div class="work-img" style="background:#d9f7ff;">🍔</div><div class="work-body"><h3>Meru Food Palace</h3><p>Restaurant • Menu • Order Online</p></div></div>
+    <div class="work"><div class="work-img" style="background:#e6ffe6;">🏫</div><div class="work-body"><h3>Bright Future School</h3><p>School Website • Admissions • Gallery</p></div></div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>What Clients Say</h2>
+  <div class="grid">
+    <div class="testi"><p>"Dennis made my salon website in 2 days. Now customers find me on Google and book on WhatsApp. Best KSh 5,000 I ever spent."</p><b>— Neema, Neema Salon Meru</b></div>
+    <div class="testi"><p>"Very professional and fast. He explained everything simply. My shop now looks big and serious."</p><b>— Kevin, Meru Town</b></div>
+    <div class="testi"><p>"I thought a website was expensive. Dennis did mine cheap and it looks expensive. I recommend him."</p><b>— Faith, Nairobi</b></div>
+  </div>
+</div>
+
+<div class="cta">
+  <h2>Want a website like this?</h2>
+  <p>Message me now. I reply in less than 10 minutes.</p>
+  <a href="https://wa.me/254700000000?text=Hi Dennis, I want a website" class="btn-black">💬 Chat on WhatsApp Now</a>
+  <p style="margin-top:15px; font-size:14px;">📍 Meru Town, Kenya • Working countrywide • Call: 0700 000 000</p>
+</div>
+
+<footer>© 2026 Dennis Kim — Web Designer in Kenya | Made with ❤️ in Meru</footer>
+
+</body>
+</html>
